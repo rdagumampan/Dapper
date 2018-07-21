@@ -1,0 +1,265 @@
+// ***** BenchmarkRunner: Start   *****
+// Found benchmarks:
+//   RepoDbBenchmarks.'Query<T> (unbuffered)': Job-OOWXZL(RemoveOutliers=True, LaunchCount=1, TargetCount=5, UnrollFactor=50, WarmupCount=0)
+//   RepoDbBenchmarks.QueryFirstOrDefault<T>: Job-OOWXZL(RemoveOutliers=True, LaunchCount=1, TargetCount=5, UnrollFactor=50, WarmupCount=0)
+
+// Validating benchmarks:
+Assembly Dapper.Tests.Performance which defines benchmarks references non-optimized Dapper
+Assembly Dapper.Tests.Performance which defines benchmarks references non-optimized Dapper.Contrib
+Assembly Dapper.Tests.Performance which defines benchmarks references non-optimized Simple.Data
+Assembly Dapper.Tests.Performance which defines benchmarks is non-optimized
+// **************************
+// Benchmark: RepoDbBenchmarks.'Query<T> (unbuffered)': Job-OOWXZL(RemoveOutliers=True, LaunchCount=1, TargetCount=5, UnrollFactor=50, WarmupCount=0)
+// *** Generate *** 
+// Result = Success
+// BinariesDirectoryPath = C:\play\Dapper\Dapper.Tests.Performance\bin\Debug\net462
+
+// *** Build ***
+BuildScript: C:\play\Dapper\Dapper.Tests.Performance\bin\Debug\net462\4c55d24c-dac7-468a-b131-2d896647010f.bat
+// Result = Success
+
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: C:\play\Dapper\Dapper.Tests.Performance\bin\Debug\net462\4c55d24c-dac7-468a-b131-2d896647010f.exe 
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.7 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.2650.0
+// GC=Concurrent Workstation
+// Job: Job-OOWXZL(RemoveOutliers=True, LaunchCount=1, TargetCount=5, UnrollFactor=50, WarmupCount=0)
+
+Pilot  1: 50 op, 77697814.83 ns, 1.5540 ms/op
+Pilot  2: 100 op, 147320687.27 ns, 1.4732 ms/op
+Pilot  3: 200 op, 291199379.49 ns, 1.4560 ms/op
+Pilot  4: 400 op, 595281864.21 ns, 1.4882 ms/op
+
+IdleWarmup  1: 400 op, 4398.72 ns, 10.9968 ns/op
+IdleWarmup  2: 400 op, 2199.36 ns, 5.4984 ns/op
+IdleWarmup  3: 400 op, 2565.92 ns, 6.4148 ns/op
+IdleWarmup  4: 400 op, 2565.92 ns, 6.4148 ns/op
+IdleWarmup  5: 400 op, 2565.92 ns, 6.4148 ns/op
+IdleWarmup  6: 400 op, 2199.36 ns, 5.4984 ns/op
+
+IdleTarget  1: 400 op, 2565.92 ns, 6.4148 ns/op
+IdleTarget  2: 400 op, 2565.92 ns, 6.4148 ns/op
+IdleTarget  3: 400 op, 2565.92 ns, 6.4148 ns/op
+IdleTarget  4: 400 op, 2565.92 ns, 6.4148 ns/op
+IdleTarget  5: 400 op, 2565.92 ns, 6.4148 ns/op
+IdleTarget  6: 400 op, 2199.36 ns, 5.4984 ns/op
+IdleTarget  7: 400 op, 2199.36 ns, 5.4984 ns/op
+IdleTarget  8: 400 op, 2199.36 ns, 5.4984 ns/op
+IdleTarget  9: 400 op, 2565.92 ns, 6.4148 ns/op
+IdleTarget 10: 400 op, 2199.36 ns, 5.4984 ns/op
+IdleTarget 11: 400 op, 2199.36 ns, 5.4984 ns/op
+IdleTarget 12: 400 op, 2199.36 ns, 5.4984 ns/op
+IdleTarget 13: 400 op, 2199.36 ns, 5.4984 ns/op
+IdleTarget 14: 400 op, 2199.36 ns, 5.4984 ns/op
+IdleTarget 15: 400 op, 2199.36 ns, 5.4984 ns/op
+IdleTarget 16: 400 op, 2565.92 ns, 6.4148 ns/op
+IdleTarget 17: 400 op, 2199.36 ns, 5.4984 ns/op
+IdleTarget 18: 400 op, 2565.92 ns, 6.4148 ns/op
+IdleTarget 19: 400 op, 2199.36 ns, 5.4984 ns/op
+IdleTarget 20: 400 op, 2199.36 ns, 5.4984 ns/op
+
+
+MainTarget  1: 400 op, 589927527.49 ns, 1.4748 ms/op
+MainTarget  2: 400 op, 599993621.86 ns, 1.5000 ms/op
+MainTarget  3: 400 op, 599727133.00 ns, 1.4993 ms/op
+MainTarget  4: 400 op, 581247395.14 ns, 1.4531 ms/op
+MainTarget  5: 400 op, 622175612.13 ns, 1.5554 ms/op
+
+Result  1: 400 op, 589925181.51 ns, 1.4748 ms/op
+Result  2: 400 op, 599991275.88 ns, 1.5000 ms/op
+Result  3: 400 op, 599724787.02 ns, 1.4993 ms/op
+Result  4: 400 op, 581245049.15 ns, 1.4531 ms/op
+Result  5: 400 op, 622173266.15 ns, 1.5554 ms/op
+GC:  45 15 0 0 2000
+
+
+// Run, Diagnostic
+// Execute: C:\play\Dapper\Dapper.Tests.Performance\bin\Debug\net462\4c55d24c-dac7-468a-b131-2d896647010f.exe diagnoserAttached
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.7 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.2650.0
+// GC=Concurrent Workstation
+// Job: Job-OOWXZL(RemoveOutliers=True, LaunchCount=1, TargetCount=5, UnrollFactor=50, WarmupCount=0)
+
+// AfterGlobalSetup
+// BeforeMainRun
+// BeforeGlobalCleanup
+Result  1: 400 op, 571787187.20 ns, 1.4295 ms/op
+Result  2: 400 op, 578182919.86 ns, 1.4455 ms/op
+Result  3: 400 op, 568859108.77 ns, 1.4221 ms/op
+Result  4: 400 op, 666647324.54 ns, 1.6666 ms/op
+Result  5: 400 op, 662273168.31 ns, 1.6557 ms/op
+GC:  45 15 0 143961832 2000
+
+
+Mean = 1.4965 ms, StdErr = 0.0171 ms (1.14%); N = 5, StdDev = 0.0382 ms
+Min = 1.4531 ms, Q1 = 1.4640 ms, Median = 1.4993 ms, Q3 = 1.5277 ms, Max = 1.5554 ms
+IQR = 0.0637 ms, LowerFence = 1.3683 ms, UpperFence = 1.6233 ms
+ConfidenceInterval = [1.3494 ms; 1.6437 ms] (CI 99.9%), Margin = 0.1472 ms (9.83% of Mean)
+Skewness = 0.4, Kurtosis = 1.48
+
+
+// **************************
+// Benchmark: RepoDbBenchmarks.QueryFirstOrDefault<T>: Job-OOWXZL(RemoveOutliers=True, LaunchCount=1, TargetCount=5, UnrollFactor=50, WarmupCount=0)
+// *** Generate *** 
+// Result = Success
+// BinariesDirectoryPath = C:\play\Dapper\Dapper.Tests.Performance\bin\Debug\net462
+
+// *** Build ***
+BuildScript: C:\play\Dapper\Dapper.Tests.Performance\bin\Debug\net462\2bdca631-54e5-45c5-88f7-0a9b8ac45a6a.bat
+// Result = Success
+
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: C:\play\Dapper\Dapper.Tests.Performance\bin\Debug\net462\2bdca631-54e5-45c5-88f7-0a9b8ac45a6a.exe 
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.7 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.2650.0
+// GC=Concurrent Workstation
+// Job: Job-OOWXZL(RemoveOutliers=True, LaunchCount=1, TargetCount=5, UnrollFactor=50, WarmupCount=0)
+
+Pilot  1: 50 op, 73367279.20 ns, 1.4673 ms/op
+Pilot  2: 100 op, 153700657.86 ns, 1.5370 ms/op
+Pilot  3: 200 op, 344276849.30 ns, 1.7214 ms/op
+Pilot  4: 400 op, 611491498.20 ns, 1.5287 ms/op
+
+IdleWarmup  1: 400 op, 6964.63 ns, 17.4116 ns/op
+IdleWarmup  2: 400 op, 2932.48 ns, 7.3312 ns/op
+IdleWarmup  3: 400 op, 2932.48 ns, 7.3312 ns/op
+IdleWarmup  4: 400 op, 4032.16 ns, 10.0804 ns/op
+IdleWarmup  5: 400 op, 3299.04 ns, 8.2476 ns/op
+IdleWarmup  6: 400 op, 3299.04 ns, 8.2476 ns/op
+
+IdleTarget  1: 400 op, 3299.04 ns, 8.2476 ns/op
+IdleTarget  2: 400 op, 4765.28 ns, 11.9132 ns/op
+IdleTarget  3: 400 op, 3299.04 ns, 8.2476 ns/op
+IdleTarget  4: 400 op, 3665.60 ns, 9.1640 ns/op
+IdleTarget  5: 400 op, 2565.92 ns, 6.4148 ns/op
+IdleTarget  6: 400 op, 3299.04 ns, 8.2476 ns/op
+IdleTarget  7: 400 op, 2932.48 ns, 7.3312 ns/op
+IdleTarget  8: 400 op, 2932.48 ns, 7.3312 ns/op
+IdleTarget  9: 400 op, 3665.60 ns, 9.1640 ns/op
+IdleTarget 10: 400 op, 3299.04 ns, 8.2476 ns/op
+IdleTarget 11: 400 op, 2932.48 ns, 7.3312 ns/op
+IdleTarget 12: 400 op, 3299.04 ns, 8.2476 ns/op
+IdleTarget 13: 400 op, 3299.04 ns, 8.2476 ns/op
+IdleTarget 14: 400 op, 2932.48 ns, 7.3312 ns/op
+IdleTarget 15: 400 op, 2932.48 ns, 7.3312 ns/op
+IdleTarget 16: 400 op, 2932.48 ns, 7.3312 ns/op
+IdleTarget 17: 400 op, 3299.04 ns, 8.2476 ns/op
+IdleTarget 18: 400 op, 2932.48 ns, 7.3312 ns/op
+IdleTarget 19: 400 op, 3299.04 ns, 8.2476 ns/op
+IdleTarget 20: 400 op, 2932.48 ns, 7.3312 ns/op
+
+
+MainTarget  1: 400 op, 623060853.67 ns, 1.5577 ms/op
+MainTarget  2: 400 op, 629302264.72 ns, 1.5733 ms/op
+MainTarget  3: 400 op, 643688631.04 ns, 1.6092 ms/op
+MainTarget  4: 400 op, 597097800.68 ns, 1.4927 ms/op
+MainTarget  5: 400 op, 605825952.35 ns, 1.5146 ms/op
+
+Result  1: 400 op, 623057627.94 ns, 1.5576 ms/op
+Result  2: 400 op, 629299038.99 ns, 1.5732 ms/op
+Result  3: 400 op, 643685405.32 ns, 1.6092 ms/op
+Result  4: 400 op, 597094574.95 ns, 1.4927 ms/op
+Result  5: 400 op, 605822726.62 ns, 1.5146 ms/op
+GC:  45 15 0 0 2000
+
+
+// Run, Diagnostic
+// Execute: C:\play\Dapper\Dapper.Tests.Performance\bin\Debug\net462\2bdca631-54e5-45c5-88f7-0a9b8ac45a6a.exe diagnoserAttached
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.7 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.2650.0
+// GC=Concurrent Workstation
+// Job: Job-OOWXZL(RemoveOutliers=True, LaunchCount=1, TargetCount=5, UnrollFactor=50, WarmupCount=0)
+
+// AfterGlobalSetup
+// BeforeMainRun
+// BeforeGlobalCleanup
+Result  1: 400 op, 641166938.96 ns, 1.6029 ms/op
+Result  2: 400 op, 575551663.10 ns, 1.4389 ms/op
+Result  3: 400 op, 572794034.90 ns, 1.4320 ms/op
+Result  4: 400 op, 576831689.37 ns, 1.4421 ms/op
+Result  5: 400 op, 576097836.97 ns, 1.4402 ms/op
+GC:  45 15 0 143961832 2000
+
+
+Mean = 1.5495 ms, StdErr = 0.0208 ms (1.34%); N = 5, StdDev = 0.0465 ms
+Min = 1.4927 ms, Q1 = 1.5036 ms, Median = 1.5576 ms, Q3 = 1.5912 ms, Max = 1.6092 ms
+IQR = 0.0876 ms, LowerFence = 1.3723 ms, UpperFence = 1.7226 ms
+ConfidenceInterval = [1.3706 ms; 1.7284 ms] (CI 99.9%), Margin = 0.1789 ms (11.55% of Mean)
+Skewness = 0, Kurtosis = 1.07
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\RepoDbBenchmarks-report.csv
+  BenchmarkDotNet.Artifacts\results\RepoDbBenchmarks-report-github.md
+  BenchmarkDotNet.Artifacts\results\RepoDbBenchmarks-report.html
+
+// * Detailed results *
+RepoDbBenchmarks.'Query<T> (unbuffered)': Job-OOWXZL(RemoveOutliers=True, LaunchCount=1, TargetCount=5, UnrollFactor=50, WarmupCount=0)
+Runtime = .NET Framework 4.7 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.2650.0; GC = Concurrent Workstation
+Mean = 1.4965 ms, StdErr = 0.0171 ms (1.14%); N = 5, StdDev = 0.0382 ms
+Min = 1.4531 ms, Q1 = 1.4640 ms, Median = 1.4993 ms, Q3 = 1.5277 ms, Max = 1.5554 ms
+IQR = 0.0637 ms, LowerFence = 1.3683 ms, UpperFence = 1.6233 ms
+ConfidenceInterval = [1.3494 ms; 1.6437 ms] (CI 99.9%), Margin = 0.1472 ms (9.83% of Mean)
+Skewness = 0.4, Kurtosis = 1.48
+
+
+RepoDbBenchmarks.QueryFirstOrDefault<T>: Job-OOWXZL(RemoveOutliers=True, LaunchCount=1, TargetCount=5, UnrollFactor=50, WarmupCount=0)
+Runtime = .NET Framework 4.7 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.2650.0; GC = Concurrent Workstation
+Mean = 1.5495 ms, StdErr = 0.0208 ms (1.34%); N = 5, StdDev = 0.0465 ms
+Min = 1.4927 ms, Q1 = 1.5036 ms, Median = 1.5576 ms, Q3 = 1.5912 ms, Max = 1.6092 ms
+IQR = 0.0876 ms, LowerFence = 1.3723 ms, UpperFence = 1.7226 ms
+ConfidenceInterval = [1.3706 ms; 1.7284 ms] (CI 99.9%), Margin = 0.1789 ms (11.55% of Mean)
+Skewness = 0, Kurtosis = 1.07
+
+
+Total time: 00:00:29 (29.77 sec)
+
+// * Summary *
+
+BenchmarkDotNet=v0.10.9, OS=Windows 8.1 (6.3.9600)
+Processor=Intel Core i7-4810MQ CPU 2.80GHz (Haswell), ProcessorCount=8
+Frequency=2728069 Hz, Resolution=366.5596 ns, Timer=TSC
+  [Host]     : .NET Framework 4.7 (CLR 4.0.30319.42000), 64bit LegacyJIT-v4.7.2650.0 DEBUG  [AttachedDebugger]
+  Job-OOWXZL : .NET Framework 4.7 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.2650.0
+
+RemoveOutliers=True  LaunchCount=1  TargetCount=5  
+UnrollFactor=50  WarmupCount=0  
+
+    ORM |                  Method | Return |     Mean |     Error |    StdDev | Rank |   Gen 0 |  Gen 1 | Allocated |
+------- |------------------------ |------- |---------:|----------:|----------:|-----:|--------:|-------:|----------:|
+ RepoDb | 'Query<T> (unbuffered)' |   Post | 1.497 ms | 0.1472 ms | 0.0382 ms |    1 | 22.5000 | 7.5000 |  70.29 KB |
+ RepoDb |  QueryFirstOrDefault<T> |   Post | 1.549 ms | 0.1789 ms | 0.0465 ms |    1 | 22.5000 | 7.5000 |  70.29 KB |
+
+// * Warnings *
+Environment
+  Summary                                                                                                                     -> Benchmark was executed with attached debugger
+  RepoDbBenchmarks.'Query<T> (unbuffered)': RemoveOutliers=True, LaunchCount=1, TargetCount=5, UnrollFactor=50, WarmupCount=0 -> Benchmark was built without optimization enabled (most probably a DEBUG configuration). Please, build it in RELEASE.
+  RepoDbBenchmarks.QueryFirstOrDefault<T>: RemoveOutliers=True, LaunchCount=1, TargetCount=5, UnrollFactor=50, WarmupCount=0  -> Benchmark was built without optimization enabled (most probably a DEBUG configuration). Please, build it in RELEASE.
+
+// * Legends *
+  ORM       : The object/relational mapper being tested
+  Return    : The return type of the method
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Rank      : Relative position of current benchmark mean among all benchmarks (Arabic style)
+  Gen 0     : GC Generation 0 collects per 1k Operations
+  Gen 1     : GC Generation 1 collects per 1k Operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ms      : 1 Millisecond (0.001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+// * Artifacts cleanup *

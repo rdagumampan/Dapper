@@ -3,13 +3,16 @@ using Soma.Core;
 
 namespace Dapper.Tests.Performance
 {
+    [RepoDb.Attributes.Map("[dbo].[Posts]")]
     [ServiceStack.DataAnnotations.Alias("Posts")]
     [Table(Name = "Posts")]
-    public class Post
+    public class Post : RepoDb.DataEntity
     {
+        [RepoDb.Attributes.Primary]
         [Id(IdKind.Identity)]
         public int Id { get; set; }
         public string Text { get; set; }
+
         public DateTime CreationDate { get; set; }
         public DateTime LastChangeDate { get; set; }
         public int? Counter1 { get; set; }
